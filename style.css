@@ -390,8 +390,7 @@
       margin: 0 2em;
     }
 
-    .services-cards,
-    .footer-bottom{
+    .services-cards{
       padding: 0 2em;
     }
 
@@ -414,5 +413,15 @@
 
     .contact-heading{
       font-size: 1.7rem;
+    }
+
+    .footer-icon{
+      position: absolute;
+      right: 5%;
+    }
+
+    .footer-bottom .logo{
+      position: relative;
+      right: 5em;
     }
   }
