@@ -25,13 +25,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 2rem 8rem 0;
+    margin-top: 2em;
+    margin-left: 5%;
+    margin-right: 10%;
   }
   
   .logo img{
     width: 100px;
     filter: brightness(0) saturate(100%) invert(29%) sepia(26%) saturate(6283%) hue-rotate(337deg) brightness(76%) contrast(112%);
     
+  }
+
+  .nav-right{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
   }
   
   .nav-items{
@@ -40,7 +48,6 @@
     text-transform: uppercase;
     font-weight: 700;
     font-size: .9rem;
-    margin-left: 3em;
   }
 
   .nav-items:first-child::after,
@@ -54,11 +61,15 @@
 
   }
 
+  .nav-right .fa-bars{
+    display: none;
+  }
+
   /* hero section */
 
   .hero{
     display: flex;
-    margin: 0 8rem;
+    margin: 0 9%;
     align-items: center;
   }
 
@@ -130,7 +141,7 @@
   
   .services-cards{
     display: flex;
-    padding: 5rem 8rem;
+    padding: 5em 8em;
     
   }
   
@@ -322,4 +333,86 @@
   .footer-icon img{
     width: 22px;
     margin: 0 1em;
+  }
+
+  /* media queries */
+
+  @media (max-width: 767px) {
+    .nav-right .nav-items{
+      display: none;
+    }
+
+    .fa-bars{
+      position: absolute;
+      right: 4%;
+    }
+
+    .logo{
+      position: relative;
+      top: 1em;
+    }
+
+    .nav-right .fa-bars{
+      display: inline;
+    }
+
+    .hero,
+    .services-cards,
+    .stat,
+    .featured-cards,
+    .contact{
+      flex-direction: column;
+    }
+
+    .services-card{
+      margin-bottom: 2em;
+    }
+
+    .hero-left,
+    .hero-right,
+    .stat-left,
+    .stat-right,
+    .stat-right-card,
+    .featured-card,
+    .btn-container{
+      width: 100%;
+    }
+
+    .hero-right{
+      margin-bottom: 1em;
+    }
+
+    .featured,
+    .stat,
+    .contact,
+    nav,
+    .hero{
+      margin: 0 2em;
+    }
+
+    .services-cards,
+    .footer-bottom{
+      padding: 0 2em;
+    }
+
+    .contact-text{
+      width: 90%;
+    }
+   
+  }
+
+  /* font size */
+
+  @media (max-width:632px) {
+    .heading{
+      font-size: 2rem;
+    }
+
+    .featured-heading{
+      font-size: 1.6rem;
+    }
+
+    .contact-heading{
+      font-size: 1.7rem;
+    }
   }

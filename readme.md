@@ -9,7 +9,7 @@
     - apply backgound color to half of the div
 
 ## Time taken to complete this project
-    - 7 hours
+    - 7 hours + 3 hours(responsiveness)
 
 ## Screenshot
 ![image](project15.png)
